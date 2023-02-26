@@ -1,6 +1,8 @@
 from fastapi import APIRouter,Depends,HTTPException,status
+
+from ..Search_Details import db
 from .import JWTtoken
-from ..import schemas,db
+from ..Search_Details import schemas
 from ..hashing import Hash
 from fastapi.security import OAuth2PasswordRequestForm
 

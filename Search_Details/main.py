@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from .router import user,admin,news_scrape,intern_scrape
-from ..loggings import logger
+from ..router import user,admin,news_scrape,intern_scrape
+from .loggings import logger
 
 
 

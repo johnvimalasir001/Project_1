@@ -1,9 +1,9 @@
 #from fastapi import APIRouter,Depends
 from fastapi import APIRouter
 from Search_Details import db
-from ..schemas import User
+from ..Search_Details.schemas import User
 #from Search_Details import oauth2
-from ..loggings import logger
+from ..Search_Details.loggings import logger
 
 router=APIRouter(
     tags=['ADMIN']

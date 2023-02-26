@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..loggings import logger
+from ..Search_Details.loggings import logger
 from bs4 import BeautifulSoup
 import requests
 
