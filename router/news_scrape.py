@@ -2,7 +2,7 @@ from fastapi import APIRouter
 #from Search_Details import db
 from bs4 import BeautifulSoup
 import requests
-from ...loggings import logger
+from ..loggings import logger
 
 router = APIRouter(
     tags=['News']

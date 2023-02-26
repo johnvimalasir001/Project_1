@@ -2,9 +2,9 @@
 from fastapi import APIRouter
 from Search_Details import db
 #from..db import create
-from ...schemas import User
+from ..schemas import User
 import wikipedia
-from ...loggings import logger
+from ..loggings import logger
 
 
 router=APIRouter(
