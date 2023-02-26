@@ -1,10 +1,11 @@
 from pymongo import MongoClient
 
-cluster=("mongodb+srv://Johnvimalasir:Johnvimalasir@cluster0.pzm5btm.mongodb.net/Search_Details?retryWrites=true&w=majority")
+cluster='mongodb+srv://Johnvimalasir:wd7n5UtPRglRrCpj@cluster0.pzm5btm.mongodb.net/Search_Details?retryWrites=true&w=majority'
+
 client=MongoClient(cluster)
 
-db=client()
-collection=db["Details"]
+db=client ('Search_Details')
+collection=db['Details']
 
 def create (data):
     data = dict(data)

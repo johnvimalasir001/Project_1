@@ -1,0 +1,44 @@
+INFO 2023-02-19 18:51:02,386 - Search here
+INFO 2023-02-19 18:51:02,388 - welcome admin
+DEBUG 2023-02-19 18:51:02,390 - Debugging Authentication
+DEBUG 2023-02-19 18:51:02,390 - Debugging User
+DEBUG 2023-02-19 18:51:02,391 - Debugging Admin
+INFO 2023-02-19 18:51:19,558 - Search here
+INFO 2023-02-19 18:51:19,561 - welcome admin
+DEBUG 2023-02-19 18:51:19,563 - Debugging Authentication
+DEBUG 2023-02-19 18:51:19,563 - Debugging User
+DEBUG 2023-02-19 18:51:19,564 - Debugging Admin
+DEBUG 2023-02-19 18:53:23,588 - #get the keyword and store it in db
+DEBUG 2023-02-19 18:53:23,589 - fetch the summary
+DEBUG 2023-02-19 18:53:23,594 - Starting new HTTP connection (1): en.wikipedia.org:80
+DEBUG 2023-02-19 18:53:24,045 - http://en.wikipedia.org:80 "GET /w/api.php?list=search&srprop=&srlimit=1&limit=1&srsearch=Keyword&srsearch=goa&srinfo=suggestion&format=json&action=query HTTP/1.1" 301 0
+DEBUG 2023-02-19 18:53:24,055 - Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG 2023-02-19 18:53:24,860 - https://en.wikipedia.org:443 "GET /w/api.php?action=query&format=json&limit=1&list=search&srinfo=suggestion&srlimit=1&srprop=&srsearch=Keyword&srsearch=goa HTTP/1.1" 200 246
+DEBUG 2023-02-19 18:53:24,868 - Starting new HTTP connection (1): en.wikipedia.org:80
+DEBUG 2023-02-19 18:53:25,068 - http://en.wikipedia.org:80 "GET /w/api.php?prop=info%7Cpageprops&inprop=url&ppprop=disambiguation&redirects=&titles=goat&format=json&action=query HTTP/1.1" 301 0
+DEBUG 2023-02-19 18:53:25,073 - Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG 2023-02-19 18:53:25,888 - https://en.wikipedia.org:443 "GET /w/api.php?action=query&format=json&inprop=url&ppprop=disambiguation&prop=info%7Cpageprops&redirects=&titles=goat HTTP/1.1" 200 476
+DEBUG 2023-02-19 18:53:25,894 - Starting new HTTP connection (1): en.wikipedia.org:80
+DEBUG 2023-02-19 18:53:26,195 - http://en.wikipedia.org:80 "GET /w/api.php?prop=extracts&explaintext=&titles=Goat&exintro=&format=json&action=query HTTP/1.1" 301 0
+DEBUG 2023-02-19 18:53:26,200 - Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG 2023-02-19 18:53:27,117 - https://en.wikipedia.org:443 "GET /w/api.php?action=query&exintro=&explaintext=&format=json&prop=extracts&titles=Goat HTTP/1.1" 200 None
+INFO  - Search here
+INFO  - welcome admin
+DEBUG  - Debugging Authentication
+DEBUG  - Debugging User
+DEBUG  - Debugging Admin
+ INFO  - Search here
+ INFO  - welcome admin
+ DEBUG  - Debugging Authentication
+ DEBUG  - Debugging User
+ DEBUG  - Debugging Admin
+2023-02-19 18:55:08,966 INFO  - Search here
+2023-02-19 18:55:08,969 INFO  - welcome admin
+2023-02-19 18:55:08,971 DEBUG  - Debugging Authentication
+2023-02-19 18:55:08,971 DEBUG  - Debugging User
+2023-02-19 18:55:08,972 DEBUG  - Debugging Admin
+2023-02-19 18:55:10,526 INFO  - Search here
+2023-02-19 18:55:10,528 INFO  - welcome admin
+2023-02-19 18:55:10,531 DEBUG  - Debugging Authentication
+2023-02-19 18:55:10,531 DEBUG  - Debugging User
+2023-02-19 18:55:10,531 DEBUG  - Debugging Admin
