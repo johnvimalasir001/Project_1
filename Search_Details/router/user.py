@@ -1,5 +1,6 @@
 
 from fastapi import APIRouter
+from Search_Details import db
 #from..db import create
 from ..schemas import User
 import wikipedia
@@ -15,11 +16,13 @@ logger.info("Search here")
 def search(data:User):
     
     logger.debug("#get the keyword and store it in db")
-    #base=create(data)
+    
     
     logger.debug("fetch the summary")
     result=wikipedia.summary(data)
+    base=db.create(data)
+    store= db.insert(result)
     
-    return {'Keyword':data,'Summary':result}
+    return ({'Keyword':data,'Summary':result},base,result)
 
 

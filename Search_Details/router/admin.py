@@ -1,6 +1,6 @@
 #from fastapi import APIRouter,Depends
 from fastapi import APIRouter
-#from Search_Details import db
+from Search_Details import db
 from ..schemas import User
 #from Search_Details import oauth2
 from ..loggings import logger
@@ -14,14 +14,14 @@ logger.info("welcome admin")
 @router.get('/admin/all')
 def all():
     logger.debug("#print all data")
-    #details=db.all()
-    return {'data':'print all'}
+    details=db.all()
+    return details
 
 @router.get('/admin/get_one')
-def one(condition:User):
+def one(Keyword:str):
     logger.debug("#print one data")
-    #one_detail=db.get_one(condition)
-    return {'data':'print one'}
+    one_detail=db.get_one(Keyword)
+    return one_detail
 
 
 
